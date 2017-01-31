@@ -1,0 +1,4 @@
+chris:
+  name: Chris Severns
+  email: chris@theagencyluxe.com
+  password_digest: <%= User.digest('password') %>
