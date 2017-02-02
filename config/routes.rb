@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :account_activaton, only: [:edit]
+  resources :account_activation, only: [:edit]
 
   get '/login', to: 'sessions#new'
 
