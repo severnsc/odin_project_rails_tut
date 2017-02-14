@@ -24,7 +24,7 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
  	log_in_as(@user)
  	get root_path
  	assert_template 'static_pages/home'
- 	assert_select 'div#following', count:1
- 	assert_select 'div#followers', count:1
+ 	assert_select 'strong#following', count:1
+ 	assert_select 'strong#followers', count:1
  end
 end
